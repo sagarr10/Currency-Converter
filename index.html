@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="currencies.js" defer></script> -->
+    <script type="module" src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container glassmorph">
+      <div class="container">
+        <div class="heading">Currency Converter</div>
+        <div class="amount-input">
+          <label for="amt-input" class="amt-label">Amount</label>
+          <input
+            type="number"
+            placeholder="Enter Amount"
+            required
+            class="amt-input glassmorph"
+            id="amt-input"
+          />
+        </div>
+      </div>
+      <div class="convert_container">
+        <div class="from-container flex">
+          <label for="country_from">From</label>
+          <select name="country_from" id="" class="country_from glassmorph">
+            <!-- <option value="ANY">Select country</option>
+              <option value="INR">INR</option> -->
+          </select>
+        </div>
+        <div class="to-container flex">
+          <label for="country_from">To</label>
+          <select name="country_to" id="" class="country_to glassmorph">
+            <!-- <option value="ANY">Select country</option>
+              <option value="INR">INR</option> -->
+          </select>
+        </div>
+        <div class="result">Please Enter the amount</div>
+      </div>
+      <button class="btn convert-btn glassmorph">Convert</button>
+    </div>
+  </body>
+</html>
